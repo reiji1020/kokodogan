@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Component/Header';
-import { Button } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 import ShowInfo from './ShowInfo';
 
 export default function TopPage() {
@@ -38,8 +38,15 @@ export default function TopPage() {
         {/* ボタンによってルーティング変える */}
         {!Object.keys(getUrlQueries()).length ? (
             <div>
-                <Button onClick={()=>transitionLink('/?page=share')}>投稿する</Button>
-                <Button onClick={()=>transitionLink('/?page=show')}>探す</Button>
+                <Grid container spacing={3}>
+                    {/* ここにGoogleMap */}
+                    <Grid item xs={12}>
+                        <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px", marginTop: "100px" }} onClick={()=>transitionLink('/?page=share')}>投稿する</Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px" }} onClick={()=>transitionLink('/?page=share')} onClick={()=>transitionLink('/?page=show')}>探す</Button>
+                    </Grid>
+                </Grid>
             </div>
         ): getUrlQueries().page === 'share' ? (
             <ShowInfo />
