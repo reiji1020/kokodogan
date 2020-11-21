@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Component/Header';
 import { Button, Grid } from '@material-ui/core';
 import ShowInfo from './ShowInfo';
+import ShareInfo from './ShareInfo'
 import SvgRogoTop from '../svgr/RogoTop';
 import Typography from '@material-ui/core/Typography';
 
@@ -54,7 +55,7 @@ export default function TopPage() {
                 </Typography>
             </div>
         ): getUrlQueries().page === 'share' ? (
-            <ShowInfo />
+            <ShareInfo />
         ): getUrlQueries().page === 'show' ? (
             <ShowInfo />
         ): null}
