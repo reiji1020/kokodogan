@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Address() {
+export default function Address(props) {
   const classes = useStyles();
 
   return (
@@ -22,10 +23,11 @@ export default function Address() {
       <Grid container spacing={3}>
         {/* ここにGoogleMap */}
         <Grid item xs={6}>
-          <Paper className={classes.paper}>ぐぐるまっぷがはいるよ</Paper>
+          <img src={`${process.env.PUBLIC_URL + props.maps}`} style={{width: "180px"}} />
         </Grid>
         <Grid item xs={6}>
-          <span>長崎電気軌道「思案橋」電停から徒歩3分です！</span>
+          <Typography>路面電車：{props.train}</Typography>
+          <Typography>バス：{props.bus}</Typography>
         </Grid>
       </Grid>
     </div>

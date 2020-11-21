@@ -1,0 +1,84 @@
+{
+  "id": 0,
+  "spotName": "ツル茶ん",
+  "accessTrain": "思案橋電停から徒歩3分くらいです！",
+  "acessBus": "浜の町前のバス停から徒歩5分くらいかな？",
+  "freeComment": "長崎最古の喫茶店で長崎風ミルクセーキの元祖、そしてトルコライスが名物のお店です。ここのトルコライスを構成するとんかつ、デミグラスソース、ピラフ、ナポリタン、そしてサラダと、いずれも及第点ではあるもののずばぬけて美味しいわけではありません。単品ごとに比較すればここよりも美味しい店はいくらでもあります。しかしながら一緒にいただくとなればこれ以外はないと思えるほどの組み合わせで、まさに大人のお子様ランチです。長崎風ミルクセーキも美味です。長崎風ミルクセーキはミルクセーキをシャリシャリに凍らせたもので、食事とあわせてであればハーフサイズも注文できます。オッサンのぼっち旅でも恥ずかしがらずに注文するが吉です。他人の目なんざ気にしていたらぼっちはやってられません。古くからの名店ゆえか、店内の雰囲気は雑然としていながらも風情があります。  朝九時開店二一時閉店という利用のしやすさも素敵です。総合力の高さゆえ★五つの評価です。",
+  "recommend": [
+      {
+          "spotName": "眼鏡橋",
+          "thumbnail": "/img/megane.jpg"
+      },
+      {
+          "spotName": "新地中華街",
+          "thumbnail": "/img/china.jpg"
+      },
+      {
+          "spotName": "オランダ坂",
+          "thumbnail": "/img/oranda.jpg"
+      }
+  ],
+  "good": 3,
+  "Comment": [
+      {
+          "auther": "山田太郎",
+          "comments": "ここは本当にトルコライスが美味しいんですか？"
+      },
+      {
+          "auther": "鈴木裕子",
+          "comments": "はい！おすすめですよ！"
+      },
+      {
+          "auther": "山田太郎",
+          "comments": "ありがとうございます！"
+      }
+  ],
+  "googleMapImage": "/img/turu_map.jpg",
+  "image": [
+      "/img/turu.jpg",
+      "/img/turu2.jpg",
+      "/img/turu3.jpg"
+  ]
+},
+{
+  "id": 1,
+  "spotName": "眼鏡橋",
+  "accessTrain": "めがね橋電停から徒歩3分くらいです！",
+  "acessBus": "中央橋のバス停から徒歩5分くらいかな？",
+  "freeComment": "眼鏡橋は、長崎市の中島川に架かる石造二連アーチ橋である。架橋時、琉球王国だった天女橋を除くと、日本初の石造りアーチ橋である。1960年に国の重要文化財に指定された。",
+  "recommend": [
+      {
+          "spotName": "新地中華街",
+          "thumbnail": "/img/china.jpg"
+      },
+      {
+          "spotName": "オランダ坂",
+          "thumbnail": "/img/oranda.jpg"
+      },
+      {
+          "spotName": "ツル茶ん",
+          "thumbnail": "/img/turu.jpg"
+      }
+  ],
+  "good": 4,
+  "Comment": [
+      {
+          "auther": "田中桃子",
+          "comments": "ハート型の石があるんですか？"
+      },
+      {
+          "auther": "鈴木裕子",
+          "comments": "はい！ぜひ見つけてみて下さい！"
+      },
+      {
+          "auther": "田中桃子",
+          "comments": "ありがとうございます♪"
+      }
+  ],
+  "googleMapImage": "/img/megane_map.jpg",
+  "image": [
+      "/img/megane.jpg",
+      "/img/megane2.jpg",
+      "/img/megane3.jpg"
+  ]
+}

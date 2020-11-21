@@ -10,7 +10,7 @@ function SvgRogoHead(props) {
       <defs>
         <style>
           {
-            ".rogo_head_svg__cls-1{stroke:#fff;stroke-miterlimit:10}.rogo_head_svg__cls-2{fill:#c20005}"
+            ".rogo_head_svg__cls-1{stroke:#fff;stroke-miterlimit:10}.rogo_head_svg__cls-2{fill:#ffffff}"
           }
         </style>
       </defs>

@@ -32,7 +32,6 @@ export default function TopPage() {
     const transitionLink = (url) => {
 		window.location.href = url;
 	};
-
     
   return (
     <div>
