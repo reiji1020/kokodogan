@@ -16,6 +16,9 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
+//Custom Component
+import SlideShow from './SlideShow';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
@@ -49,6 +52,7 @@ export default function SpotInfo() {
 
   return (
     <Card className={classes.root}>
+
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -63,11 +67,7 @@ export default function SpotInfo() {
         title="ツル茶ん"
         subheader="Novenver 21, Sat"
       />
-      <CardMedia
-        className={classes.media}
-        image={process.env.PUBLIC_URL + '/img/turu.jpg'}
-        title="turuchan"
-      />
+      <SlideShow />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           長崎ゆかりの名店です！トルコライスも美味しいですが、ミルクセーキもとてもおいしいです！
