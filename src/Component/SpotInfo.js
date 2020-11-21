@@ -17,6 +17,7 @@ import SlideShow from './SlideShow';
 import Thumbnail from './Tnumbnail';
 import Title from './Title';
 import Address from './Address';
+import ReccomendTitle from './RecommendTitle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -67,6 +68,8 @@ export default function SpotInfo() {
 古くからの名店ゆえか、店内の雰囲気は雑然としていながらも風情があります。  朝九時開店二一時閉店という利用のしやすさも素敵です。
 総合力の高さゆえ★五つの評価です。
       </Typography>
+      {/* リコメンド */}
+      <ReccomendTitle />
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />

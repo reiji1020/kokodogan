@@ -44,7 +44,7 @@ export default function TopPage() {
                         <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px", marginTop: "100px" }} onClick={()=>transitionLink('/?page=share')}>投稿する</Button>
                     </Grid>
                     <Grid item xs={12}>
-                        <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px" }} onClick={()=>transitionLink('/?page=share')} onClick={()=>transitionLink('/?page=show')}>探す</Button>
+                        <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px" }} onClick={()=>transitionLink('/?page=show')}>探す</Button>
                     </Grid>
                 </Grid>
             </div>
