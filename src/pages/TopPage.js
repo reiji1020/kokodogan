@@ -42,6 +42,12 @@ export default function TopPage() {
         {!Object.keys(getUrlQueries()).length ? (
             <div>
                 <SvgRogoTop style={{marginTop: "80px"}} />
+                <div style={{marginTop: "50px"}}>
+                <Typography>長崎県民からの「ここどがん？」な提案と</Typography>
+                <Typography>県外在住者の「ここどがん？」な質問とを</Typography>
+                <Typography style={{color: "#c20005"}}>つなぎ合わせる</Typography>
+                <Typography>Webサービスです</Typography>
+                </div>
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
                         <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px", marginTop: "100px" }} onClick={()=>transitionLink('/?page=share')}>投稿する</Button>
