@@ -13,6 +13,8 @@ import Thumbnail from './Tnumbnail';
 import Title from './Title';
 import Address from './Address';
 import ReccomendTitle from './RecommendTitle';
+import Recommend from './Recommend';
+import SvgRogoComment from '../svgr/RogoComment';
 
 const id0 = require('../static/0.json');
 
@@ -63,8 +65,17 @@ export default function SpotInfo() {
       </Typography>
       {/* リコメンド */}
       <ReccomendTitle />
-        {id0.recommend.map(item=>(
-            <Typography>{item.spotName}</Typography>
+      <div />
+      <React.Fragment>
+      {id0.recommend.map(item=>(
+            <Recommend image={item.thumbnail} spotName={item.spotName} />
+        ))}
+      </React.Fragment>
+      <SvgRogoComment style={{width: "100px", height: "50px"}} />
+      {id0.Comment.map(item=>(
+          <React.Fragment>
+            <Typography>{`${item.auther}:${item.comments}`}</Typography>
+          </React.Fragment>
         ))}
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">

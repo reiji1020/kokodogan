@@ -21,7 +21,6 @@ export default function Address(props) {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        {/* ここにGoogleMap */}
         <Grid item xs={6}>
           <img src={`${process.env.PUBLIC_URL + props.maps}`} style={{width: "180px"}} />
         </Grid>
