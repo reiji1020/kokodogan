@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: "#c20005" }}>
         <Toolbar>
           <Typography variant="h6">
             ココどがん
