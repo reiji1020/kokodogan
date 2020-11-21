@@ -45,7 +45,7 @@ export default function ShareForm() {
             <MenuItem value={'Siteseeng'}>観光名所</MenuItem>
             <MenuItem value={'cat'}>ねこスポット</MenuItem>
         </Select>
-        <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "90%", padding: "30px", marginTop: "100px" }} onClick={()=>transitionLink('/?page=show')}>投稿する！</Button>
+        <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "90%", padding: "30px", marginTop: "100px" }} onClick={()=>transitionLink('/')}>投稿する！</Button>
     </form>
   );
 }
