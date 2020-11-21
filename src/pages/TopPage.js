@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../Component/Header';
 import { Button, Grid } from '@material-ui/core';
 import ShowInfo from './ShowInfo';
+import SvgRogoTop from '../svgr/RogoTop';
+import Typography from '@material-ui/core/Typography';
 
 export default function TopPage() {
     const [query, setPageQuery] = React.useState(null);
@@ -38,8 +40,8 @@ export default function TopPage() {
         {/* ボタンによってルーティング変える */}
         {!Object.keys(getUrlQueries()).length ? (
             <div>
+                <SvgRogoTop style={{marginTop: "80px"}} />
                 <Grid container spacing={3}>
-                    {/* ここにGoogleMap */}
                     <Grid item xs={12}>
                         <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px", marginTop: "100px" }} onClick={()=>transitionLink('/?page=share')}>投稿する</Button>
                     </Grid>
@@ -47,6 +49,9 @@ export default function TopPage() {
                         <Button variant="contained" style={{ color: "#ffffff", backgroundColor: "#c20005", width: "100%", padding: "30px" }} onClick={()=>transitionLink('/?page=show')}>探す</Button>
                     </Grid>
                 </Grid>
+                <Typography style={{marginTop: "200px"}}>
+                    @Aジサイ All right Reserved.
+                </Typography>
             </div>
         ): getUrlQueries().page === 'share' ? (
             <ShowInfo />
