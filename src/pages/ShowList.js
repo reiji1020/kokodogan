@@ -7,6 +7,8 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
+import StarIcon from '@material-ui/icons/Star';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,7 +31,7 @@ export default function ShowList() {
       <ListItem onClick={()=>{transitionLink('/?page=show&id=0')}}>
         <ListItemAvatar>
           <Avatar>
-            <ImageIcon />
+            <LocalCafeIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="ツル茶ん" secondary="山田太郎" />
@@ -37,7 +39,7 @@ export default function ShowList() {
       <ListItem onClick={()=>{transitionLink('/?page=show&id=1')}}>
         <ListItemAvatar>
           <Avatar>
-            <WorkIcon />
+            <StarIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="めがね橋" secondary="鈴木裕子" />
@@ -45,7 +47,7 @@ export default function ShowList() {
       <ListItem onClick={()=>{transitionLink('/?page=show&id=2')}}>
         <ListItemAvatar>
           <Avatar>
-            <BeachAccessIcon />
+            <StarIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="オランダ坂" secondary="佐藤貴教" />
