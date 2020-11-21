@@ -2,23 +2,21 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 //Custom Component
 import SlideShow from './SlideShow';
 import Thumbnail from './Tnumbnail';
+import Title from './Title';
+import Address from './Address';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,30 +51,22 @@ export default function SpotInfo() {
 
   return (
     <Card className={classes.root}>
-
-      <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            山田
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="ツル茶ん"
-        subheader="Novenver 21, Sat"
-      />
       {/* スライドコンポーネント */}
       <SlideShow />
       {/* サムネイル */}
       <Thumbnail />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          長崎ゆかりの名店です！トルコライスも美味しいですが、ミルクセーキもとてもおいしいです！
-        </Typography>
-      </CardContent>
+      {/* タイトル */}
+      <Title />
+      {/* 交通アクセス */}
+      <Address />
+      {/* フリーコメント */}
+      <Typography style={{margin: "2em"}}>
+      長崎最古の喫茶店で長崎風ミルクセーキの元祖、そしてトルコライスが名物のお店です。
+ここのトルコライスを構成するとんかつ、デミグラスソース、ピラフ、ナポリタン、そしてサラダと、いずれも及第点ではあるもののずばぬけて美味しいわけではありません。単品ごとに比較すればここよりも美味しい店はいくらでもあります。しかしながら一緒にいただくとなればこれ以外はないと思えるほどの組み合わせで、まさに大人のお子様ランチです。
+長崎風ミルクセーキも美味です。長崎風ミルクセーキはミルクセーキをシャリシャリに凍らせたもので、食事とあわせてであればハーフサイズも注文できます。オッサンのぼっち旅でも恥ずかしがらずに注文するが吉です。他人の目なんざ気にしていたらぼっちはやってられません。
+古くからの名店ゆえか、店内の雰囲気は雑然としていながらも風情があります。  朝九時開店二一時閉店という利用のしやすさも素敵です。
+総合力の高さゆえ★五つの評価です。
+      </Typography>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />

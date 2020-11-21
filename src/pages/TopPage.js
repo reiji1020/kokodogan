@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import Header from '../Component/Header';
 
 export default function TopPage() {
-
   return (
     <div>
       <Header />
