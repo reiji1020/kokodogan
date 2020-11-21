@@ -18,6 +18,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 //Custom Component
 import SlideShow from './SlideShow';
+import Thumbnail from './Tnumbnail';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -67,7 +68,10 @@ export default function SpotInfo() {
         title="ツル茶ん"
         subheader="Novenver 21, Sat"
       />
+      {/* スライドコンポーネント */}
       <SlideShow />
+      {/* サムネイル */}
+      <Thumbnail />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           長崎ゆかりの名店です！トルコライスも美味しいですが、ミルクセーキもとてもおいしいです！
