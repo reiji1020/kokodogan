@@ -17,6 +17,8 @@ import Recommend from './Recommend';
 import SvgRogoComment from '../svgr/RogoComment';
 
 const id0 = require('../static/0.json');
+const id1 = require('../static/1.json');
+const id2 = require('../static/2.json');
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,36 +45,62 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SpotInfo() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+  const [id, setId] = React.useState(id0);
 
-  useEffect(()=>{
-      console.log(id0)
-  })
+      // get query
+      const getUrlQueries = () => {
+		const queryStr = window.location.search.slice(1); // 文頭?を除外
+		let queries = {};
+
+		// クエリがない場合は空のオブジェクトを返す
+		if (!queryStr) {
+			return queries;
+		}
+
+		// クエリ文字列を & で分割して処理
+		queryStr.split('&').forEach(function(queryStr) {
+			// = で分割してkey,valueをオブジェクトに格納
+			var queryArr = queryStr.split('=');
+			queries[queryArr[0]] = queryArr[1];
+		});
+
+		return queries;
+    }
+
+    useEffect(()=>{
+        getUrlQueries().id === '0' ? (
+            setId(id0)
+        ): getUrlQueries().id === '1' ? (
+            setId(id1)
+        ): getUrlQueries().id === '2' ? (
+            setId(id2)
+        ): setId({})
+    });
 
   return (
     <Card className={classes.root}>
       {/* スライドコンポーネント */}
-      <SlideShow image={id0.image} />
+      <SlideShow image={id.image} />
       {/* サムネイル */}
-      <Thumbnail image={id0.image} />
+      <Thumbnail image={id.image} />
       {/* タイトル */}
       <Title />
       {/* 交通アクセス */}
-      <Address train={id0.accessTrain} bus={id0.accessBus} maps={id0.googleMapImage} />
+      <Address train={id.accessTrain} bus={id.accessBus} maps={id.googleMapImage} />
       {/* フリーコメント */}
       <Typography style={{margin: "2em"}}>
-        {id0.freeComment}
+        {id.freeComment}
       </Typography>
       {/* リコメンド */}
       <ReccomendTitle />
       <div />
       <React.Fragment>
-      {id0.recommend.map(item=>(
+      {id.recommend.map(item=>(
             <Recommend image={item.thumbnail} spotName={item.spotName} />
         ))}
       </React.Fragment>
       <SvgRogoComment style={{width: "100px", height: "50px"}} />
-      {id0.Comment.map(item=>(
+      {id.Comment.map(item=>(
           <React.Fragment>
             <Typography>{`${item.auther}:${item.comments}`}</Typography>
           </React.Fragment>
@@ -80,7 +108,7 @@ export default function SpotInfo() {
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
-        <Typography>{id0.good}つの「よかばい!」が付いています</Typography>
+        <Typography>{id.good}つの「よかばい!」が付いています</Typography>
         </IconButton>
       </CardActions>
     </Card>

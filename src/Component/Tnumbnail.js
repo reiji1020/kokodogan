@@ -11,21 +11,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Tumbnail() {
+export default function Tumbnail(props) {
   const classes = useStyles();
   const theme = useTheme();
 
-  const images = [
-    `${process.env.PUBLIC_URL + '/img/turu.jpg'}`,
-    `${process.env.PUBLIC_URL + '/img/turu2.jpg'}`,
-    `${process.env.PUBLIC_URL + '/img/turu3.jpg'}`
-  ];
-
   return (
     <Card>
-        {images.map((each, index) => (
+        {props.image.map((each, index) => (
             <div key={index} style={{"display": "inline-block", "_display": "inline"}}>
-                <img style={{ margin: "0.8em 0.8em 0.8em 0", border: "none", width: "50px"}} src={each} />
+                <img style={{ margin: "0.8em 0.8em 0.8em 0", border: "none", width: "50px"}} src={`${process.env.PUBLIC_URL + each}`} />
             </div>
         ))}
     </Card>

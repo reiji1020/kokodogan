@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Component/Header';
 import { Button, Grid } from '@material-ui/core';
 import ShowInfo from './ShowInfo';
+import ShowList from './ShowList';
 import ShareInfo from './ShareInfo'
 import SvgRogoTop from '../svgr/RogoTop';
 import Typography from '@material-ui/core/Typography';
@@ -25,7 +26,7 @@ export default function TopPage() {
 			var queryArr = queryStr.split('=');
 			queries[queryArr[0]] = queryArr[1];
 		});
-
+        console.log(queries)
 		return queries;
     }
 
@@ -55,9 +56,11 @@ export default function TopPage() {
             </div>
         ): getUrlQueries().page === 'share' ? (
             <ShareInfo />
-        ): getUrlQueries().page === 'show' ? (
+        ): getUrlQueries().page === 'show' && getUrlQueries().id !== undefined ? (
             <ShowInfo />
-        ): null}
+        ): getUrlQueries().page === 'show' && getUrlQueries().id === undefined ? (
+            <ShowList />
+        ) : null}
     </div>
   );
 }

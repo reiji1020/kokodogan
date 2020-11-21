@@ -1,0 +1,42 @@
+{
+    "id": 3,
+    "spotName": "オランダ坂",
+    "accessTrain": "メディカルセンター電停から徒歩5分くらいです！",
+    "acessBus": "市民病院前のバス停から徒歩5分くらいかな？",
+    "freeComment": "東山手洋風住宅群など、異国情緒あふれる東山手に位置しており、近隣には日本で最初の女学校である活水学院・洋風住宅７棟があります。出島に住むオランダ人の影響か、開国後も長崎の人々は東洋人以外を「オランダさん」と呼んでいた為、当時「オランダさんが通る坂」という意味で居留地にある坂はすべてオランダ坂と呼んでいたと考えられています。現在は、主に活水学院下の坂、活水坂、誠孝院（じょうこういん）前の坂がオランダ坂と呼ばれています。",
+    "recommend": [
+        {
+            "spotName": "新地中華街",
+            "thumbnail": "/img/china.JPG"
+        },
+        {
+            "spotName": "ツル茶ん",
+            "thumbnail": "/img/turu.jpg"
+        },
+        {
+            "spotName": "眼鏡橋",
+            "thumbnail": "/img/megane.JPG"
+        }
+    ],
+    "good": 4,
+    "Comment": [
+        {
+            "auther": "山田太郎",
+            "comments": "がっかりスポットなんて聞きますが、実際どうですか？"
+        },
+        {
+            "auther": "鈴木裕子",
+            "comments": "まわりには西洋風の建物やおしゃれなカフェもあるので、おすすめです！"
+        },
+        {
+            "auther": "山田太郎",
+            "comments": "ありがとうございます！"
+        }
+    ],
+    "googleMapImage": "/img/oranda_map.JPG",
+    "image": [
+        "/img/oranda.JPG",
+        "/img/oranda2.JPG",
+        "/img/oranda3.JPG"
+    ]
+}
