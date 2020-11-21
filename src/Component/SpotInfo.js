@@ -74,33 +74,7 @@ export default function SpotInfo() {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>
-            最寄りのバス停・電停：最寄り電停は思案橋電停です！電車のほうがおすすめです
-          </Typography>
-          <Typography paragraph>
-            カテゴリ：Cafe
-          </Typography>
-          <Typography paragraph>
-            次どこ行くね？：眼鏡橋に行ったよ！
-          </Typography>
-          <Typography>
-            自由入力コメント：長崎市の中心部にあるから、観光していてお腹が空いたときに寄れるのが利点です！ガッツリ食べたいときも、ちょっと休憩したいときもおすすめよ！
-          </Typography>
-        </CardContent>
-      </Collapse>
     </Card>
   );
 }
