@@ -1,0 +1,42 @@
+{
+    "id": 1,
+    "spotName": "眼鏡橋",
+    "accessTrain": "めがね橋電停から徒歩3分くらいです！",
+    "acessBus": "中央橋のバス停から徒歩5分くらいかな？",
+    "freeComment": "眼鏡橋は、長崎市の中島川に架かる石造二連アーチ橋である。架橋時、琉球王国だった天女橋を除くと、日本初の石造りアーチ橋である。1960年に国の重要文化財に指定された。",
+    "recommend": [
+        {
+            "spotName": "新地中華街",
+            "thumbnail": "/img/china.JPG"
+        },
+        {
+            "spotName": "オランダ坂",
+            "thumbnail": "/img/oranda.JPG"
+        },
+        {
+            "spotName": "ツル茶ん",
+            "thumbnail": "/img/turu.jpg"
+        }
+    ],
+    "good": 4,
+    "Comment": [
+        {
+            "auther": "田中桃子",
+            "comments": "ハート型の石があるんですか！？"
+        },
+        {
+            "auther": "鈴木裕子",
+            "comments": "はい！ぜひ見つけてみて下さい！"
+        },
+        {
+            "auther": "田中桃子",
+            "comments": "ありがとうございます！"
+        }
+    ],
+    "googleMapImage": "/img/megane_map.JPG",
+    "image": [
+        "/img/megane.JPG",
+        "/img/megane2.JPG",
+        "/img/megane3.JPG"
+    ]
+}
